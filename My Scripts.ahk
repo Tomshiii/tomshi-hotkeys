@@ -3,13 +3,9 @@
  * The ahk version listed below is the version I am using while generating the current release (so the version that is being tested on)
  * @file My Scripts.ahk
  * @author Tomshi
- * @date 2026/11/20
- * @version v2.21.0.3
- * @ahk_ver 2.0.31
+ * @date 2026/11/25
+ * @version v2.35.18
  ***********************************************************************/
-
-;\\CURRENT SCRIPT VERSION\\This is a "script" local version and doesn't relate to the Release Version
-;\\v2.35.18
 
 #SingleInstance Force
 #Requires AutoHotkey v2.0
@@ -124,7 +120,7 @@ __exit(ExitReason, ExitCode) {
 ; =======================================================================================================================================
 start := Startup()
 start.trayMen()
-start.gitBranchCheck([ptf.rootDir, WinGet.pathU(ptf.rootDir "\..\textreplace")])
+start.gitBranchCheck([ptf.rootDir, WinGet.pathU(ptf.rootDir "\..\textreplace"), WinGet.pathU(ptf.rootDir "\..\tomshi-hotkeys")])
 start.updateChecker()
 start.updatePackages(,,,, ["vcredist"])
 start.oldLogs()

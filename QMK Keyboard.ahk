@@ -23,9 +23,6 @@ startupTray()
 ;\\CURRENT SCRIPT VERSION\\This is a "script" local version and doesn't relate to the Release Version
 ;\\v2.14.0
 
-;\\CURRENT RELEASE VERSION
-;\\v2.21.0.3
-
 ; \\\\\\\\////////////
 ; THIS SCRIPT WAS ORIGINALLY CREATED BY TARAN FROM LTT, I HAVE REWORKED IT TO WORK IN AHK v2.0 and then completely changed it to be for my workflow
 ; ALSO I AM CURRENTLY USING A PLANCK EZ CUSTOM KEYBOARD WITH CUSTOM QMK FIRMWARE AND NOT USING THE HASU USB -> USB CONVERTER. Check Release v2.2.5.1 and below for a version of this script written for a small secondary numpad

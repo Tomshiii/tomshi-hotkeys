@@ -481,9 +481,9 @@ $d::
 	prem.__focusTimeline()
 }
 
-F20::prem.dragSourceMon("video")
-F14 & F20::prem.dragSourceMon("both")
-F19::
+F21::prem.dragSourceMon("video")
+; F14 & F20::prem.dragSourceMon("both")
+F23::
 {
 	panel := prem.cursorWithinPanel()
 	if panel == null {
@@ -496,7 +496,7 @@ F19::
 	}
 
 }
-F14 & F19::prem.dragSourceMon("audio")
+; F14 & F23::prem.dragSourceMon("audio")
 
 ;// playback speed change hotkeys
 __speedPlayback(which) {
@@ -513,14 +513,14 @@ ralt & f14::
 F14 & F23::__speedPlayback("speedUp")
 
 ;// next/previous edit point hotkeys
-<+F21::prem.wheelEditPoint(KSA.prem.effectControls, ksa.prem.previousKeyframe, 2, true) ;goes to the next keyframe point towards the left
-<+F23::prem.wheelEditPoint(KSA.prem.effectControls, ksa.prem.nextKeyframe, 2, true) ;goes to the next keyframe towards the right
+<+F20::prem.wheelEditPoint(KSA.prem.effectControls, ksa.prem.previousKeyframe, 2, true) ;goes to the next keyframe point towards the left
+<+F19::prem.wheelEditPoint(KSA.prem.effectControls, ksa.prem.nextKeyframe, 2, true) ;goes to the next keyframe towards the right
 
-<!F21::prem.wheelEditPoint(ksa.prem.timelineWindow, ksa.prem.selectedClipStart, 2, true, "{LAlt}{F21}")
-<!F23::prem.wheelEditPoint(ksa.prem.timelineWindow, ksa.prem.selectedClipEnd, 2, true, "{LAlt}{F23}")
+<!F20::prem.wheelEditPoint(ksa.prem.timelineWindow, ksa.prem.selectedClipStart, 2, true, "{LAlt}{F21}")
+<!F19::prem.wheelEditPoint(ksa.prem.timelineWindow, ksa.prem.selectedClipEnd, 2, true, "{LAlt}{F19}")
 ;// next/previous frame hotkeys
-F21::prem.wheelEditPoint(KSA.prem.timelineWindow, KSA.prem.previousEditPoint,, true) ;goes to the next edit point towards the left
-F23::prem.wheelEditPoint(KSA.prem.timelineWindow, KSA.prem.nextEditPoint,, true) ;goes to the next edit point towards the right
+F20::prem.wheelEditPoint(KSA.prem.timelineWindow, KSA.prem.previousEditPoint,, true) ;goes to the next edit point towards the left
+F19::prem.wheelEditPoint(KSA.prem.timelineWindow, KSA.prem.nextEditPoint,, true) ;goes to the next edit point towards the right
 
 ;// mousedrag hotkeys
 *XButton2::prem.mousedrag(KSA.prem.handTool, KSA.prem.selectionTool) ;changes the tool to the hand tool while mouse button is held ;check the various Functions scripts for the code to this preset & the keyboard shortcuts ini file for the tool shortcuts

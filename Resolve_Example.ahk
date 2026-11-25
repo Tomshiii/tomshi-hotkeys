@@ -24,8 +24,6 @@ startupTray()
 ;\\CURRENT SCRIPT VERSION\\This is a "script" local version and doesn't relate to the Release Version
 ;\\v2.10.0
 
-;\\CURRENT RELEASE VERSION
-;\\v2.21.0.3
 ; ==================================================================================================
 ;
 ; 							THIS SCRIPT IS FOR v2.0 OF AUTOHOTKEY
