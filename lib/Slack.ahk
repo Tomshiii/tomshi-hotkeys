@@ -10,3 +10,9 @@ SC03A & r::slack.button("reply", true)
 
 F1::Slack.unread("dm")
 F2::Slack.unread("")
+
+Escape::
+{
+    if !Slack.exitThread()
+        SendInput('{Escape}')
+}
